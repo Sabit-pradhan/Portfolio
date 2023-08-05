@@ -16,12 +16,14 @@
                 <img src="images/logo.png" alt class="logo">
                <div class="name"> <h1>Sabit</h1></div></div>
             </div>
-            <ul>
+            <ul id="sidemenu">
                 <li><a href="#">home</a></li>
                 <li><a href="#">home</a></li>
                 <li><a href="#">home</a></li>
                 <li><a href="#">home</a></li>
+                <i class ="fas fa-times" onclick="closemenu()"></i>
             </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
             
         </nav>
     </div>
@@ -178,7 +180,7 @@
         <div class="contact-left">
             <h1 class="Sub-title">Contact Me</h1>
             <p><i class="fas fa-paper-plane"></i>sabitpradhan4@gmail.com</p>
-            <P><i class=" fas fa-phone-from-square-alt"></i>7008193677</P>
+            <P><i class="fa-solid fa-phone"></i>7008193677</P>
             <div class="social-icons">
                 <a href="#"><i class="fa-brands fa-github"></i></a>
                 <a href="#"><i class="fa-brands fa-twitter"></i></a>
@@ -215,6 +217,15 @@
             document.getElementById(tabname).classList.add("active-tab"); 
         }
        
+    </script>
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemeu.style.right="0";
+        }
+        function closemenu(){
+            sidemeu.style.right="-200px";
+        }
     </script>
 </body>
 </html>
